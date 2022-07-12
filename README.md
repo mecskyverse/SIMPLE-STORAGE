@@ -2,6 +2,9 @@
 
 This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a script that deploys that contract.
 
+Its a Simple contract with some functionality of manipulate and do some changes to the
+smartcontract variable it can store values and do some normal functionality.
+
 Try running some of the following tasks:
 
 ```shell
