@@ -16,6 +16,11 @@ module.exports = {
       accounts: [Goerli_key],
       chainId: 5,
     },
+    localhost: {
+      url: "http://127.0.0.1:8545/",
+      chainId: 31337,
+      //thanks hardhart for accounts
+    },
   },
   etherscan: {
     apiKey: Ether_api,
