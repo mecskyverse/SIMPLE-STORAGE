@@ -12,4 +12,11 @@ describe("SimpleStorage", function () {
 
     assert.equal(currentnumber.toString(), expectednumber);
   });
+  it("should Update while we call store function", async function () {
+    const expectednumber = "7";
+    const updatednumber = await simplestorage.store(7);
+    await updatednumber.wait(1);
+    const newvalue = await simplestorage.retrieve();
+    assert.equal(expectednumber, newvalue.toString());
+  });
 });
