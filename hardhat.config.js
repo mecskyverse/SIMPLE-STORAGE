@@ -2,6 +2,7 @@ require("@nomicfoundation/hardhat-toolbox");
 require("dotenv").config();
 require("@nomiclabs/hardhat-etherscan");
 require("./tasks/block-number");
+require("hardhat-gas-reporter");
 /** @type import('hardhat/config').HardhatUserConfig */
 
 const Goerli_RPC_URL = process.env.Goerli_RPC_URL;
@@ -24,6 +25,9 @@ module.exports = {
   },
   etherscan: {
     apiKey: Ether_api,
+  },
+  gasReporter: {
+    enabled: true,
   },
   solidity: "0.8.7",
 };
